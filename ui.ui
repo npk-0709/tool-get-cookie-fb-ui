@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>860</width>
+    <height>572</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>9</pointsize>
+    <weight>75</weight>
+    <bold>true</bold>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>TOOL GET TÀI NGUYÊN HÀNG LOẠT- K.Auto</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPlainTextEdit" name="inputData">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>841</width>
+      <height>131</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>NHẬP TÀI NGUYÊN VÀO ĐÂY</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="resultData">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>841</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>TÀI NGUYÊN SAU KHI CHẠY SẼ XUẤT HIỆN Ở ĐÂY</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="typeGet">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>480</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>CHỌN DẠNG GET</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COOKIE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>ACCESS_TOKEN EAAB</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>450</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>SỐ LUỒNG</string>
+    </property>
+   </widget>
+   <widget class="QSpinBox" name="numThread">
+    <property name="geometry">
+     <rect>
+      <x>300</x>
+      <y>450</y>
+      <width>51</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <property name="minimum">
+     <number>1</number>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="typeLogin">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>450</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>CHỌN DẠNG LOGIN</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>COOKIE</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>USER|PASS|2Fa</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btnEvent">
+    <property name="geometry">
+     <rect>
+      <x>680</x>
+      <y>460</y>
+      <width>151</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>BẮT ĐẦU</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="btnExportFile">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>500</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>EXPORT FILE</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>450</y>
+      <width>201</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>THÀNH CÔNG/ĐÃ CHẠY/TỔNG :</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="success_total">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>450</y>
+      <width>61</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>0/0/0</string>
+    </property>
+   </widget>
+   <widget class="QComboBox" name="typeResult">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>510</y>
+      <width>161</width>
+      <height>22</height>
+     </rect>
+    </property>
+    <item>
+     <property name="text">
+      <string>CHỌN DẠNG XUẤT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>UID|RESULT</string>
+     </property>
+    </item>
+    <item>
+     <property name="text">
+      <string>RESULT</string>
+     </property>
+    </item>
+   </widget>
+   <widget class="QPushButton" name="btnContactAdmin">
+    <property name="geometry">
+     <rect>
+      <x>440</x>
+      <y>490</y>
+      <width>151</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>LIÊN HỆ ADMIN</string>
+    </property>
+   </widget>
+   <widget class="QPlainTextEdit" name="status">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>841</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="placeholderText">
+     <string>TOOL ĐƯỢC PHÁT TRIỂN BỞI K.AUTO</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>860</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
